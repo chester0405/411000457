@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+    <head>
+        <meta charset="utf-8">
+        <title>日本賞櫻</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="日本賞櫻">
+        <link rel="stylesheet" type="text/css" href="1.css">
+    </head>
+    <script>
+        window.onload = function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const message = urlParams.get('message');
+            if (message) {
+                alert(decodeURIComponent(message));
+                window.location.search = '';
+            }
+        };
+    </script>
+    <body>
+        <header>
+            <div class="header-container">
+                <div class="logo-container">
+                    <a href="1.html"><img src="japan/logo.png" alt="Logo"></a>
+                </div>
+                <div class="form-container">
+                    <form action="1.php" method="post">
+                        <label for="username">帳號:</label>
+                        <input type="text" id="username" name="username" required><br><br>
+                    
+                        <label for="email">電子郵件:</label>
+                        <input type="email" id="email" name="email" required><br><br>
+                    
+                        <label for="password">密碼:</label>
+                        <input type="password" id="password" name="password" required><br><br>
+                    
+                        <input type="submit" value="註冊">
+                    </form>
+                    
+                </div>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li>
+                        <a href="index.php">首頁</a>
+                    </li>
+                    <li>
+                        <a href="1.html">櫻花祭</a>
+                    </li>
+                    <li class="navigation">
+                        <a href="2.html">賞花地點</a> 
+                    </li>
+                    <li class="navigation">
+                        <a href="3.php">賞花住宿</a> 
+                    </li>
+                    <li class="navigation">
+                        <a href="4.php">賞花機票</a>
+                    </li>
+                    <li>
+                        <a href="5.php">個人頁面</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="mainvisual">
+                <img src="japan/2.jpeg" alt="日本櫻花季">
+            </div>
+
+            <article id="profile">
+                <div class="inner">
+                    <h2>什麼是櫻花祭？</h2>
+                    <p>日本櫻花祭是延續了數個世紀的古老傳統。<br> 
+
+                        櫻花祭在全國各地舉行，活動內容包括了野餐、派對、點心、賞花派對（也稱為花見，意思是「賞花」）。<br>
+                        
+                        歷史學家估計賞花可以追溯到一千多年前。最初，賞花節所賞的不是櫻花，而是梅花，為日本貴族專屬的活動。<br>
+                        
+                        如今，櫻花祭成為了大眾文化的主體，吸引了世界各地和日本全國的觀光客前來一睹盛開的櫻花（又名"桜（サクラ）"）。</p>
+                </div>
+            </article>
+
+            <article id="html">
+                <form class="search-form" action="https://www.google.com/search" method="GET">
+                    <input type="text" name="q" placeholder="搜尋 Google">
+                    <input type="submit" value="搜尋">
+                </form>
+                <section>
+                    <h3>櫻花祭活動</h3>
+                    <table>
+                        <caption>櫻花祭的重點的確在於櫻花，不過這個廣為慶祝的節日也有一系列歷久彌新的傳統和文化活動。</caption>
+                        <tr>
+                            <th>野餐</th>
+                            <td>這種露天盛宴是櫻花祭重要的一部分。親朋好友聚粉色櫻花樹冠下，品嚐季節美饌和櫻花麻糬等傳統甜點。 </td>
+                        </tr>
+                        <tr>
+                            <th>清酒</th>
+                            <td>清酒由發酵米汁釀造而成，是賞花慶典常見的酒精飲料。在日本櫻花祭，從早到晚都能見到喝著清酒的人。</td>
+                        </tr>
+                        <tr>
+                            <th>茶道</th>
+                            <td>跟清酒一樣，茶在賞花慶典很常見。傳統茶道的特色為茶具，包括櫻花圖案點綴的茶杯和茶壺。紅茶和綠茶都可以跟櫻花混合，提供了一種體驗櫻花的獨特方式。</td>
+                        </tr>
+                        <tr>
+                            <th>文化體驗</th>
+                            <td>櫻花祭通常會有現場演出、舞蹈和文化展覽。賞花節的文化體驗因節日而異，每個櫻花祭的花見各有特色。</td>
+                        </tr>
+                        <tr>
+                            <th>紙燈籠</th>
+                            <td> 日本有許多盛大的櫻花祭持續到傍晚。太陽下山後，櫻花祭的參加者可以從新的角度體驗這個節日。晚上通常會點亮紙燈籠，這些燈籠照亮了櫻花樹和櫻花，營造出一種神奇的體驗。</td>
+                        </tr>
+                    </table>
+                </section>
+            </article>
+            <form action="1.php" method="post" class="message-form">
+                <label for="name" class="message-label">名字:</label>
+                <input type="text" id="name" name="name" class="message-input" required><br><br>
+                
+                <label for="message" class="message-label">留言:</label>
+                <textarea id="message" name="message" class="message-textarea" required></textarea><br><br>
+                
+                <input type="submit" value="提交留言" class="message-submit">
+            </form>
+        </main>
+
+        <footer>
+            <p class="pagetop"><a href="#top">▲回到本頁開頭</a></p>
+            <p class="copyright">
+                <small>&copy; Copyright 411000457</small>
+            </p>
+        </footer>
+    </body>
+    </html>

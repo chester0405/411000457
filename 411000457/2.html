@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+    <html lang="zh-Hant-TW">
+    <head>
+        <meta charset="utf-8">
+        <title>日本賞櫻</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="日本賞櫻">
+        <link rel="stylesheet" type="text/css" href="2.css">
+    </head>
+    <script>
+        window.onload = function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const message = urlParams.get('message');
+            if (message) {
+                alert(decodeURIComponent(message));
+                window.location.search = '';
+            }
+        };
+    </script>
+    <body>
+        <header>
+            <div class="header-container">
+                <div class="logo-container">
+                    <a href="1.html"><img src="japan/logo.png" alt="Logo"></a>
+                </div>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li>
+                        <a href="index.php">首頁</a>
+                    </li>
+                    <li>
+                        <a href="1.html">櫻花祭</a>
+                    </li>
+                    <li class="navigation">
+                        <a href="2.html">賞花地點</a> 
+                    </li>
+                    <li class="navigation">
+                        <a href="3.php">賞花住宿</a> 
+                    </li>
+                    <li class="navigation">
+                        <a href="4.php">賞花機票</a>
+                    </li>
+                    <li>
+                        <a href="5.php">個人頁面</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+            <main>
+                <div class="mainvisual">
+                    <img src="japan/3.jpeg">
+                </div>
+                <div class="inner">
+            </main>
+            <form class="search-form" action="https://www.funtime.com.tw/localtour/search.php" method="GET">
+                <input type="text" name="search" placeholder="跟團、機票、自由行、票券、訂房、簽證...">
+                <input type="submit" value="搜尋">
+            </form>
+            <div class="region-navigation">
+                <h2>
+                    <a href="#hokkaido">北海道</a>
+                    <a>/</a>
+                    <a href="#kanto">關東</a>
+                    <a>/</a>
+                    <a href="#kyushu">九州</a>
+                </h2>
+            </div>
+            
+            <main>
+                <!-- 北海道區塊 -->
+                <section id="hokkaido">
+                    <h2>北海道</h2>
+                    <div class="webimg-container">
+                        <section class="webimg">
+                            <img src="japan/4.jpeg" alt="" width="150" height="150"></a>
+                            <p>
+                                【粉櫻北海道】<br>朝日之丘、絕美青池、旭山動物園、北海道神宮、札幌小樽5日
+                                <ul>
+                                    <li>北海道賞櫻名所~朝日之丘公園、北海道神宮、札幌圓山公園</li>
+                                    <li>Tiffany夢幻藍~白金青池、日本百選瀑布~銀河流星瀑布</li>
+                                    <li>可愛北極熊~旭山動物園</li>
+                                </ul>
+                                <a class="price">
+                                    <span>5天</span>
+                                    $42,900   
+                                    <span>起</span>  
+                                </a>       
+                            </p>                                                                        
+                            </a>
+                        </section>
+                        
+                        <section class="webimg">
+                            <img src="japan/5.jpeg" alt="" width="150" height="150"></a>
+                            <p>  
+                                【粉櫻北海道】<br>繽紛芝櫻、鬱金香花毯、道東美人湯、札幌溫泉5日
+                                <ul>
+                                    <li>東藻琴 粉紅芝櫻《5月上旬～6月上旬》</li>
+                                    <li>上湧別鬱金香公園《5月上旬～6月上旬》</li>
+                                    <li>迷倒全世界大自然風光～愛奴文化阿寒湖+深邃藍摩周湖</li>
+                                </ul>
+                                <a class="price">
+                                    <span>5天</span>
+                                    $45,900   
+                                    <span>起</span>  
+                                </a>                                             
+                            </p>
+                            </a>
+                        </section>
+                        
+                        <section class="webimg">
+                            <img src="japan/6.jpeg" alt="" width="150" height="150">
+                            <p>
+                                【粉櫻北海道】<br>伊達時代村．北海道神宮．浪漫小樽．札幌櫻花雙溫泉5日
+                                <ul>
+                                    <li>完整重現江戶時代的街景與文化～登別伊達時代村</li>
+                                    <li>大正浪漫情懷～小樽運河</li>
+                                    <li>雙溫泉，壽司套餐，日式定食料理，三大螃蟹</li>
+                                </ul>  
+                                <a class="price">
+                                <span>5天</span>
+                                $46,900   
+                                <span>起</span>  
+                                </a>                                                      
+                            </p>
+                            </a>
+                        </section>    
+                    </div>    
+                </section>
+            
+                <!-- 關東區塊 -->
+                <section id="kanto">
+                    <h2>關東</h2>
+                    <div class="webimg-container">
+                        <section class="webimg">
+                            <img src="japan/7.jpeg" alt="" width="150" height="150"></a>
+                            <p>
+                            【精選】東京迪士尼<br>
+                                ●春櫻～上野公園．隅田公園．小田原城跡．箱根溫泉5日<br>
+                                ● 箱根美景～蘆之湖海盜船、箱根神社<br>
+                                ● 東京迪士尼樂園<br>
+                                ● 關東賞櫻名所～上野恩賜公園、隅田公園、小田原城跡<br>
+                                <a class="price">
+                                    <span>5天</span>
+                                    $46,900   
+                                    <span>起</span>  
+                                </a>       
+                            </p>                                                                        
+                            </a>
+                        </section>
+                        
+                        <section class="webimg">
+                            <img src="japan/8.jpeg" alt="" width="150" height="150"></a>
+                            <p>  
+                                【精選】東京<br>
+                                ● 伊豆極上之宿～河津櫻賞梅．箱根鐵道．淺草寺．溫泉5日<br>
+                                ● 伊豆●早春河津櫻、熱海梅園<br>
+                                ● 富士●箱根●三島天空步道<br>
+                                ● 極上之宿～稻取莊 石花海溫泉旅館<br>
+                                <a class="price">
+                                    <span>5天</span>
+                                    $47,900   
+                                    <span>起</span>  
+                                </a>                                             
+                            </p>
+                            </a>
+                        </section>
+                        
+                        <section class="webimg">
+                            <img src="japan/9.jpeg" alt="" width="150" height="150">
+                            <p>
+                                【精選】東京五星<br>
+                                ●富士百選春櫻～箱根雙湯．米其林美食．海岸美術館5日<br>
+                                ● 賞櫻名所～新倉山淺間公園、新宿御苑、上野恩賜公園<br>
+                                ● 安排搭乘箱根三種特殊交通工具～飽覽美景<br>
+                                ● 入住五星飯店一晚＆品嘗米其林星級餐廳料理<br>
+                                <a class="price">
+                                <span>5天</span>
+                                $48,900   
+                                <span>起</span>  
+                                </a>                                                      
+                            </p>
+                            </a>
+                        </section>    
+                    </div>        
+                </section>
+            
+                <!-- 九州區塊 -->
+                <section id="kyushu">
+                    <h2>九州</h2>
+                    <div class="webimg-container">
+                        <section class="webimg">
+                            <img src="japan/10.jpeg" alt="" width="150" height="150"></a>
+                            <p>
+                            【精選九州】叢林動物巴士、春嬉由布院、元乃隅神社、角島海上大橋5日<br>
+                                ● 山口必訪景點～元乃隅神社、角島大橋<br>
+                                ● 熊本吉祥物～萌熊電車體驗<br>
+                                ● 漫步神話之地‧高千穗峽、日本百選瀑布‧真名井瀑布<br>
+                                <a class="price">
+                                    <span>5天</span>
+                                    $37,900   
+                                    <span>起</span>  
+                                </a>       
+                            </p>                                                                        
+                            </a>
+                        </section>
+                        
+                        <section class="webimg">
+                            <img src="japan/11.jpeg" alt="" width="150" height="150"></a>
+                            <p>  
+                                【精選九州】南阿蘇鐵道、柳川搖擼船、金鱗湖、熊本城春櫻盛宴5日<br>
+                                ● 熊本四百年名櫻「一心行大櫻」<br>
+                                ● 春櫻盛宴「熊本城、舞鶴公園」<br>
+                                ● 百選溫泉「杖立肥前屋」<br>
+                                <a class="price">
+                                    <span>5天</span>
+                                    $38,900   
+                                    <span>起</span>  
+                                </a>                                             
+                            </p>
+                            </a>
+                        </section>
+                        
+                        <section class="webimg">
+                            <img src="japan/12.jpeg" alt="" width="150" height="150">
+                            <p>
+                                【【典藏九州戀櫻花】高千穗峽、春賞金鱗湖、由布院之森、別府和藏之宿5日<br>
+                                ● 熊本必走景點～熊本城、水前寺、城彩苑<br>
+                                ● 春日限定‧柳川賞櫻遊船<br>
+                                ● 大快品嚐九州鹿兒島黑豚肉<br>
+                                <a class="price">
+                                <span>5天</span>
+                                $45,900   
+                                <span>起</span>  
+                                </a>                                                      
+                            </p>
+                            </a>
+                        </section>    
+                    </div>        
+                </section>
+
+                <article id="profile1">
+                    <h2>不知道該去哪裡嗎？來抽籤看看要去哪裡玩！</h2>
+                    <form id="ladderGameForm">
+                        <input type="button" id="startGame" value="開始遊戲">
+                    </form>
+                    <div id="gameResult"></div>
+            
+                    <script>
+                            document.getElementById('startGame').addEventListener('click', function() {
+                            var xhr = new XMLHttpRequest();
+                            xhr.onreadystatechange = function() {
+                                if (xhr.readyState == 4 && xhr.status == 200) {
+                                    document.getElementById('gameResult').innerHTML = xhr.responseText;
+                                }
+                            };
+                            xhr.open('POST', '2.php', true);
+                            xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                            xhr.send('startGame=true');
+                        });
+                    </script>
+                </article>
+
+                <h2>填寫你最喜愛的城市，即可參加活動！</h2>
+                <form action="2.php" method="post" class="message-form">
+
+                    <label for="name" class="message-label">聯絡人姓名:</label>
+                    <input type="text" id="name" name="name" class="message-input" required><br><br>
+
+                    <label for="phone" class="message-label">聯絡電話:</label>
+                    <input type="text" id="phone" name="phone" class="message-input" required><br><br>
+
+                    <input type="radio" id="paris" name="city" value="北海道">
+                    <label for="paris">北海道</label><br>
+                    <input type="radio" id="tokyo" name="city" value="關東">
+                    <label for="tokyo">關東</label><br>
+                    <input type="radio" id="newyork" name="city" value="九州">
+                    <label for="newyork">九州</label><br><br>
+                    
+                    <input type="submit" value="提交活動" class="message-submit">
+                </form>
+            </main>
+            <footer>
+                <p class="pagetop"><a href="#top">▲回到本頁開頭</a></p>
+                <p class="copyright"><small>&copy; Copyright 411000457 </small></p>
+            </footer>
+        </body>
+    </html>
